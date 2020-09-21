@@ -1,0 +1,728 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="http://dib-lab.github.io/2020-NSURP/11.experiment-challenge/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+    
+    
+      
+        <title>Experiment Challenge - dib-lab NSURP project</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.077507d7.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ff0a5ce4.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7e56c2">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#experiment-challenge" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="http://dib-lab.github.io/2020-NSURP/" title="dib-lab NSURP project" class="md-header-nav__button md-logo" aria-label="dib-lab NSURP project">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            dib-lab NSURP project
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Experiment Challenge
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/dib-lab/2020-NSURP" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020-NSURP
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="http://dib-lab.github.io/2020-NSURP/" title="dib-lab NSURP project" class="md-nav__button md-logo" aria-label="dib-lab NSURP project">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    dib-lab NSURP project
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dib-lab/2020-NSURP" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020-NSURP
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Setup" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01.using-farm/" title="Setting up Farm" class="md-nav__link">
+      Setting up Farm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02.conda/" title="Install Conda" class="md-nav__link">
+      Install Conda
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../03.lab-notebook/" title="Keeping a Lab Notebook" class="md-nav__link">
+      Keeping a Lab Notebook
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../04.sourmash-tutorial/" title="Try Sourmash!" class="md-nav__link">
+      Try Sourmash!
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../05.starting-a-work-session/" title="Starting a Work Session" class="md-nav__link">
+      Starting a Work Session
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      IBD Research Project
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="IBD Research Project" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        IBD Research Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.download-assess-ibd-data/" title="Download and Visually Assess" class="md-nav__link">
+      Download and Visually Assess
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07.quality-control/" title="Quality Control" class="md-nav__link">
+      Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08.taxonomic-discovery-with-sourmash/" title="Taxonomic Discovery with Sourmash" class="md-nav__link">
+      Taxonomic Discovery with Sourmash
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09.comparing-samples-with-sourmash/" title="Comparing Samples with Sourmash" class="md-nav__link">
+      Comparing Samples with Sourmash
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Experiment Challenge
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Experiment Challenge" class="md-nav__link md-nav__link--active">
+      Experiment Challenge
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workspace-setup" class="md-nav__link">
+    Workspace Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-additional-files" class="md-nav__link">
+    Download Additional Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trim-and-compute-sourmash-signatures-for-these-files" class="md-nav__link">
+    Trim and compute sourmash signatures for these files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-sourmash-compare" class="md-nav__link">
+    Run Sourmash Compare
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assess-taxonomic-diversity" class="md-nav__link">
+    Assess Taxonomic Diversity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#look-at-the-sample-metadata" class="md-nav__link">
+    Look at the sample metadata
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Advanced Modules
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Advanced Modules" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Advanced Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10.workflows-and-repeatability/" title="Automation, Workflows, and Repeatability" class="md-nav__link">
+      Automation, Workflows, and Repeatability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12.angus-github/" title="Version Control with Git and GitHub" class="md-nav__link">
+      Version Control with Git and GitHub
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workspace-setup" class="md-nav__link">
+    Workspace Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-additional-files" class="md-nav__link">
+    Download Additional Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trim-and-compute-sourmash-signatures-for-these-files" class="md-nav__link">
+    Trim and compute sourmash signatures for these files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-sourmash-compare" class="md-nav__link">
+    Run Sourmash Compare
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assess-taxonomic-diversity" class="md-nav__link">
+    Assess Taxonomic Diversity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#look-at-the-sample-metadata" class="md-nav__link">
+    Look at the sample metadata
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="experiment-challenge">Experiment Challenge</h1>
+<p>Thus far, we've run through a set of commands with six metagenome samples. 
+These have been from two patients, one with Crohn's disease, one without.
+But there's not much we can say with just two patients (other than "they look different!").</p>
+<p>Now, we'll add samples from more patients and try to understand the differences between samples.</p>
+<h2 id="workspace-setup">Workspace Setup</h2>
+<p>If you're starting a new work session on FARM, be sure to follow the instructions <a href="../05.starting-a-work-session/">here</a>.</p>
+<h2 id="download-additional-files">Download Additional Files</h2>
+<p>Move into the raw data folder</p>
+<pre><code>cd ~/2020-NSURP/raw_data
+</code></pre>
+
+<p>Download the files</p>
+<pre><code>wget https://ibdmdb.org/tunnel/static/HMP2/WGS/1818/HSMA33S4.tar
+wget https://ibdmdb.org/tunnel/static/HMP2/WGS/1818/HSMA33R1.tar
+wget https://ibdmdb.org/tunnel/static/HMP2/WGS/1818/HSMA33R5.tar
+
+wget https://ibdmdb.org/tunnel/static/HMP2/WGS/1818/MSM6J2QP.tar
+wget https://ibdmdb.org/tunnel/static/HMP2/WGS/1818/MSM6J2QF.tar
+wget https://ibdmdb.org/tunnel/static/HMP2/WGS/1818/MSM6J2QH.tar
+</code></pre>
+
+<p>Untar each read set</p>
+<pre><code>tar xf HSMA33S4.tar
+</code></pre>
+
+<h2 id="trim-and-compute-sourmash-signatures-for-these-files">Trim and compute sourmash signatures for these files</h2>
+<p>Using your HackMD notes, run the commands for trimming (both adapter and k-mer trimming) on these samples.</p>
+<p>For reference, the <a href="07.quality-control">Quality Control</a> contains code for running <code>fastp</code> and <code>khmer</code> trimming; the <a href="09.comparing-samples-with-sourmash">Comparing Samples with Sourmash</a> contains code for computing sourmash signatures.</p>
+<h2 id="run-sourmash-compare">Run Sourmash Compare</h2>
+<p>Run <code>sourmash compare</code> and <code>sourmash plot</code> (as in <a href="09.comparing-samples-with-sourmash">Comparing Samples with Sourmash</a>).</p>
+<p>What do you notice about the sourmash comparison heatmap?</p>
+<p>Which samples are more similar to each other? 
+Can you guess which patients have Crohn's disease or no IBD by comparing them to your prior samples?
+How do samples from the same patient compare to samples from different patients?</p>
+<h2 id="assess-taxonomic-diversity">Assess Taxonomic Diversity</h2>
+<p>Run <code>sourmash gather</code> with the <code>genbank-k31</code> database on these new samples. </p>
+<p>Count the total number of species found in each sample. Does it differ between Crohn's disease and non-IBD patients?</p>
+<h2 id="look-at-the-sample-metadata">Look at the sample metadata</h2>
+<p>What additional information can you glean from looking at the metadata (the data <em>about</em> the data)?</p>
+<p>As usual, let's start by creating a directory for this</p>
+<pre><code>mkdir -p ~/2020-NSURP/metadata
+cd ~/2020-NSURP/metadata
+</code></pre>
+
+<p>All information about this project can be found <a href="https://ibdmdb.org/tunnel/public/summary.htmlhttps://ibdmdb.org/tunnel/public/summary.html">here</a>.</p>
+<p>Download the metadata file <a href="https://ibdmdb.org/tunnel/products/HMP2/Metadata/hmp2_metadata.csv">here</a>.</p>
+<p>This file contains information for the metagenomics sequencing (which we looked at), but also a number of other assessments.</p>
+<p>This file is a spreadsheet that can be opened in Google docs or viewed with <code>less</code>.</p>
+<p>For example, view this file with less like so:</p>
+<pre><code>less -S hmp2_metadata.csv
+</code></pre>
+
+<p>This is a very large file. You can get information about a specific sample by searching out the specific sample id's we used.
+For example:</p>
+<pre><code>grep HSMA33S4 hmp2_metadata.csv
+</code></pre>
+
+<p>That's still a lot of info - let's get only the info for metagenomics samples:</p>
+<pre><code>grep metagenomics hmp2_metadata.csv | grep HSMA33S4
+</code></pre>
+
+<p>The formatting is still a litle ugly. 
+Let's direct the output to a file, and then open it with <code>less -S</code>:</p>
+<pre><code>grep metagenomics hmp2_metadata.csv | grep HSMA33S4 &gt; HSMA33S4.csv
+less -S HSMA33S4.csv
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../09.comparing-samples-with-sourmash/" title="Comparing Samples with Sourmash" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Comparing Samples with Sourmash
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../10.workflows-and-repeatability/" title="Automation, Workflows, and Repeatability" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Automation, Workflows, and Repeatability
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 <a href="http://ivory.idyll.org/lab/">Lab for Data Intensive Biology</a> at UC Davis
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
